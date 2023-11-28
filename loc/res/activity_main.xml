@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Enter location:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lonTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Latitude:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Longitude:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TableRow
+        android:id="@+id/tableRowNum"
+        android:layout_width="409dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/n1"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="1" />
+        <Button
+            android:id="@+id/n2"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="2" />
+        <Button
+            android:id="@+id/n3"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="3" />
+        <Button
+            android:id="@+id/n4"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="4" />
+        <Button
+            android:id="@+id/n5"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="5" />
+        <Button
+            android:id="@+id/n6"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="6" />
+        <Button
+            android:id="@+id/n7"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="7" />
+        <Button
+            android:id="@+id/n8"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="8" />
+        <Button
+            android:id="@+id/n9"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="9" />
+        <Button
+            android:id="@+id/n0"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="0" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="409dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/textViewQ"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="q" />
+        <Button
+            android:id="@+id/textViewW"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="w" />
+        <Button
+            android:id="@+id/textViewE"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="e" />
+        <Button
+            android:id="@+id/textViewR"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="r" />
+        <Button
+            android:id="@+id/textViewT"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="t" />
+        <Button
+            android:id="@+id/textViewY"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="y" />
+        <Button
+            android:id="@+id/textViewU"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="u" />
+        <Button
+            android:id="@+id/textViewI"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="i" />
+        <Button
+            android:id="@+id/textViewO"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="o" />
+        <Button
+            android:id="@+id/textViewP"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="p" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="392dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+        <Button
+            android:id="@+id/textViewA"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="a" />
+        <Button
+            android:id="@+id/textViewS"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="s" />
+        <Button
+            android:id="@+id/textViewD"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="d" />
+        <Button
+            android:id="@+id/textViewF"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="f" />
+        <Button
+            android:id="@+id/textViewG"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="g" />
+        <Button
+            android:id="@+id/textViewH"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="h" />
+        <Button
+            android:id="@+id/textViewJ"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="j" />
+        <Button
+            android:id="@+id/textViewK"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="k" />
+        <Button
+            android:id="@+id/textViewL"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="l" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="432dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+        <Button
+            android:id="@+id/textViewCAPS"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="Caps" />
+        <Button
+            android:id="@+id/textViewZ"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="z" />
+        <Button
+            android:id="@+id/textViewX"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="x" />
+        <Button
+            android:id="@+id/textViewC"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="c" />
+        <Button
+            android:id="@+id/textViewV"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="v" />
+        <Button
+            android:id="@+id/textViewB"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="b" />
+        <Button
+            android:id="@+id/textViewN"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="n" />
+        <Button
+            android:id="@+id/textViewM"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:justificationMode="inter_word"
+            android:onClick="sendMessage"
+            android:text="m" />
+        <Button
+            android:id="@+id/textViewDEL"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="Del" />
+    </TableRow>
+    <TableRow
+        android:layout_width="290dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+        <Button
+            android:id="@+id/textViewCOMMA"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="," />
+        <Button
+            android:id="@+id/textViewSPACE"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="| |" />
+        <Button
+            android:id="@+id/textViewDOT"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="." />
+        <Button
+            android:id="@+id/textViewRET"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="Ret" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>
